@@ -22,7 +22,7 @@ const ImgCard = (props: CardProps) => (
     <Text style={styles.cardTitle}>{props.title}</Text>
     <Image
       source={{uri: props.url}}
-      resizeMode="contain"
+      resizeMode="center"
       style={{
         width: Dimensions.get('window').width * 0.8,
         height: 420,
@@ -78,12 +78,12 @@ const List = (props: ImageListProps) => {
 const ImageList = () => {
   const [index, setIndex] = useState(0);
   const [subList] = useState([
+    'AlbumArtPorn',
+    'ImagesAlbum',
+    'SciFiArt',
     'Art',
     'ArtPorn',
     'AnimeART',
-    'SFMCompileClub',
-    'hentai',
-    'rule34',
   ]);
 
   return (

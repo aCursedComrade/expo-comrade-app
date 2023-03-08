@@ -1,4 +1,5 @@
 import React from 'react';
+import {StatusBar} from 'expo-status-bar';
 import Main from './src/Main';
 import {
   Provider as PaperProvider,
@@ -18,6 +19,7 @@ const App = () => {
   return (
     <PaperProvider theme={theme}>
       <Main />
+      <StatusBar style="auto" />
     </PaperProvider>
   );
 };
