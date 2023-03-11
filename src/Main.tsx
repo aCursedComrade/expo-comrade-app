@@ -1,36 +1,8 @@
 import React, {useState} from 'react';
-import {SafeAreaView, Image} from 'react-native';
-import {Text, BottomNavigation} from 'react-native-paper';
+import {BottomNavigation} from 'react-native-paper';
+import Home from './home/Home';
+import Other from './other/Other';
 import ImageList from './reddit-art/ImageList';
-
-const Home = () => (
-  <SafeAreaView
-    style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-    <Text style={{fontSize: 32}}>This is the home page</Text>
-    <Image
-      source={{
-        uri: 'https://media.discordapp.net/attachments/650511623433486359/1039180313512906773/maxwell.gif',
-        height: 300,
-        width: 300,
-      }}
-      resizeMode="center"
-    />
-  </SafeAreaView>
-);
-const Other = () => (
-  <SafeAreaView
-    style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-    <Text style={{fontSize: 32}}>This is some other page</Text>
-    <Image
-      source={{
-        uri: 'https://media.discordapp.net/attachments/955361448492683304/964565690407329882/meme.gif',
-        height: 300,
-        width: 300,
-      }}
-      resizeMode="center"
-    />
-  </SafeAreaView>
-);
 
 const Main = () => {
   const [index, setIndex] = useState(0);

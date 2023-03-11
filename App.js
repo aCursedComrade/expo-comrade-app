@@ -18,8 +18,8 @@ const theme = {
 const App = () => {
   return (
     <PaperProvider theme={theme}>
-      <Main />
       <StatusBar style="auto" />
+      <Main />
     </PaperProvider>
   );
 };

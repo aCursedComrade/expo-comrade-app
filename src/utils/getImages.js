@@ -6,7 +6,7 @@ import {decode} from 'html-entities';
  * @param {String} sub
  * @returns {Promise<[{id: String, title: String, url:String}]>}
  */
-const getImages = async (sub) => {
+const getImages = async sub => {
   const imgList = [];
   const api = create({
     baseURL: 'https://www.reddit.com',
